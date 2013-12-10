@@ -1,0 +1,19 @@
+<html>
+<head></head>
+<body>
+  <style type="text/css">
+  .time {
+    font-size: 72px;
+    text-align: center;
+  }
+  </style>
+  <div id='time' class='time'></div>
+  <script type="text/javascript">
+  setInterval(function() {
+    var d = new Date();
+    var n = d.toUTCString();
+    document.getElementById('time').innerHTML = n;
+  }, 500);
+  </script>
+</body>
+</html>
