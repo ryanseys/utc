@@ -14,7 +14,7 @@
   setInterval(function() {
     var d = new Date();
     var n = d.toUTCString();
-    document.getElementById('time').innerHTML = n;
+    document.getElementById('time').innerHTML = n.replace('GMT', 'UTC');
   }, 500);
   </script>
 </body>
