@@ -5,16 +5,19 @@
 <body>
   <style type="text/css">
   .time {
+    font-family: sans-serif-light, Helvetica, sans-serif;
+    font-weight: 100;
     font-size: 72px;
     text-align: center;
   }
   </style>
   <div id='time' class='time'></div>
   <script type="text/javascript">
+  var e = document.getElementById('time');
   setInterval(function() {
     var d = new Date();
     var n = d.toUTCString();
-    document.getElementById('time').innerHTML = n.replace('GMT', 'UTC');
+    e.innerHTML = n.replace('GMT', 'UTC');
   }, 500);
   </script>
 </body>
