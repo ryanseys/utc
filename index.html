@@ -31,9 +31,7 @@
   <script type="text/javascript">
   var e = document.getElementById('time');
   setInterval(function() {
-    var d = new Date();
-    var n = d.toUTCString();
-    e.innerHTML = n.replace('GMT', 'UTC');
+    e.innerHTML = (new Date()).toUTCString().replace('GMT', 'UTC');
   }, 500);
   </script>
 </body>
